@@ -1,5 +1,5 @@
 # palladium
-Mobile iOS &amp; Android App Tests
+Mobile iOS &amp; Android App Tests in JAVA
 
 ### Pre-requisite
 1. Latest version of appium (follow these setup instructions: https://appium.io/docs/en/about-appium/getting-started/) 
