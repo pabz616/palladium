@@ -5,6 +5,26 @@ Mobile iOS &amp; Android App Tests in Webdriver.io
 1. Latest version of appium (follow these setup instructions: https://appium.io/docs/en/about-appium/getting-started/) 
 2. Homebrew
 
+### Set Up
+1. Open VS Code (or IDE of choice) and Create a new folder (mkdir {your-folder-name})
+2. Open VS Code terminal and run the following commands: `npm init -y` and `npm init wdio`
+3. Move through the prompts for the target env. In this case, its Android (or iOS)
+4. Select the proper options and install devices, browsers, appium-server (if not already installed) and so on.
+5. Verify intall by running appium-doctor.
+6. Verify all is well with the following command: `npm ls webdriverio`
+7. Open wdio.conf.js and configure capabilities section to match the specs in appium-inspector
+8. Run test with the following command: `npm run test` (as it occurs in wdio.conf.js/scripts)
+9. To run a single test: `npx wdio run wdio.conf.js --spec ./path/test-name,js`
+
+### Reporting
+src: https://webdriver.io/docs/allure-reporter/
+1. Install Allure with the following command: `npm install @wdio/allure-reporter --save-dev`
+2. Update wdio.conf.js to use allure at `reporters` section `['allure', {outputDir: './test/results'}]`
+3. Run test and check that Allure appears in the target directory
+4. Install allure command line tool: `npm i allure-commandline --save-dev` (if not found)
+5. Generate the report with the following command: `allure generate ./test/results`
+6. Display report with the following command: `allure open`
+   
 ### for iOS 
 * a Mac (M1 or better)
 * latest XCode
