@@ -1,6 +1,6 @@
 {
   "name": "appium_js",
-  "version": "1.0.0",
+  "version": "^1.0.0",
   "description": "Mobile iOS &amp; Android App Tests in Javascript",
   "main": "index.js",
   "scripts": {
