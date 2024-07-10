@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@wdio/cli": "^8.10.0"
+    "@wdio/cli": "8.20.0"
   },
   "devDependencies": {
     "@wdio/appium-service": "^8.10.0",
